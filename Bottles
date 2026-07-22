@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trident Bottles</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Trident Bottles">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlRyaWRlbnQgQm90dGxlcyIsICJzaG9ydF9uYW1lIjogIlRyaWRlbnQgQm90dGxlcyIsICJkZXNjcmlwdGlvbiI6ICJUcmlkZW50IEJvdHRsZXMgd2VpZ2h0LCBsZW5ndGgsIGFuZCB3aWR0aCBRQyBsb2dnZXIiLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiI2Y1ZjFmOCIsICJ0aGVtZV9jb2xvciI6ICIjNWIyZDgyIiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTFFBQUFDMENBSUFBQUN5cjVGbEFBQU9YMGxFUVZSNG5PMmRlWFFVUlJyQXE2YW5lM29tTTVNRUVvR0VIQWhJZ0NRY2NuaHdtNERIZ2dzaUlLdGNjc2p4V0R4MlhWZWZ1N3JxUTUrNnE0QUVYUlpZcmxVV2ZTekNZMUdqaUFpN3lvWXpJSGNnSElZa2tEa3lkL2YrZ2N0elpXclMzNlNQWlBMOS9vTTM2ZTZxL25WMTFWZGZWZFAyTitjUkJJbUd5ZWdMUUpvdUtBZkNCT1ZBbUtBY0NCT1VBMkdDY2lCTVVBNkVDY3FCTUVFNUVDWW9COElFNVVDWW9Cd0lFNVFEWVlKeUlFeFFEb1FKeW9Fd1FUa1FKaWdId2dUbFFKaWdIQWdUbEFOaGduSWdURkFPaEFuS2dUQkJPUkFtS0FmQ0JPVkFtS0FjQ0JPVUEyR0NjaUJNVUE2RUNjcUJNRUU1RUNZb0I4SUU1VUNZb0J3SUU1UURZWUp5SUV4UURvUUp5b0V3UVRrUUppZ0h3Z1RsUUppZ0hBZ1RsQU5oZ25JZ1RGQU9oQW5LZ1RCQk9SQW1LQWZDQk9WQW1LQWNDQk9VQTJHQ2NpQk16RVpmUUN5Y1ZscVlaUzdNNW5MU3VNeFVVMGFxS2RsR3JUd1ZCVW9wOFlka2YxQ3VENUpMVjZVTFY2VEtLNUh5ODVIOUZlR3pOWkxSRi81VGVJNTB6VFFYWm5FZDIzQVpLYWFNVkZPNjAyUVZxTWdUa2FjUmlRVENzdGN2MTNqa3l5NnBvbG82ZFRseXVESjhxRExpOGNzR1hqWnRhdCtWcFpRVVpwbEhGUExGK1VLWGRoeWw0Q05jOGNwZkhBbDljakQ0ZVhuSUV6Q3ljbTlweHhWMTU0dnloWjQ1WnA0RC83a3Nrd1Bud3FXSFE2WGxvZjFudzdMdVJXbENjdGd0OUlGK2xpbURMSjNhd0NzeUdyNmcvT0czd1pWZitvOWVpS2h5UUlVa1dlam9Qc0lqQThSdW1lb1VoQkJTNDVHM2xBVlhmZVUvZGxHL3NqUUpPWGlPVEJzc3poOWhkVnJoRFlVQ3RoOE12cnpKZDZwSzgycTFDWFQ2VVBHeFlhSkRtNElRUW5ZZkQ2M2FHZmpuZ1dCWSs1ZW44WElNek9NWGprL0ticTF0MXpnc2tSVTcvQXMzMXdmRFdwM2l3WDZXWjBaWjA1MTY5UEhITFhMdlBoN1MraXhHZGtoNWpqdzkwalp6cUJoSHh3S0syVVJtREJVSGRPSG5yZktvM2pLbk9VeXZUYkFWRndqcUh0WndEQnZLT3ExMC9Uem5yR0Y2bUhHZHJobmNQNTV3RHU3S3Ezak1uam5tVDM3alREd3ppRkZ5dEVrMmJmeWxzMzlIQTlxdEpBdGRPZE14dW84NjkvS2VIc0tHK1k0MFIyS0dpd3dvbGROSzE4MXg1R1dvMXBPSFl1YklIeCsyRitjM3R2MFkyVXNvbVdZWGVSMmJQbjNSV3c3QlRKYlBjTnpTempBenJzR1p5SklwOXA0NThUZGRRN3Z4YjAreW14SldERUwwNzVEK2RwVHR0azd4bkhUUGlmQ25oNEw3S3NLbkxrc3VueHlSWkx1RlpyWG04aks0SVYzNTRRVTg5QW0yQ25UcFZIdnh3cm80b3BDZDJuQWwwK3ptdUF5UFNHVFBpZER1RStIOUZlR0thcW5hSS9rQ01xVkVGR2lLamJaTk51V2tjZDB5dVI3WjV0NjU1dmhPb1JhNkRtVUg1dkZyWnp1Z1BkQnRCNEt2YnZhZCtEN1dFQ1BaUnFjUEVSKzdTNFFxc3ZHYndJTFZYdENmaUR6ZC9LUXpqdGZpRmEvODN1Zis5YnNEMVc1Rk1RcWJRTy9zd3YvOFZxRTRuN2NLLzFjdWZZYXkrc2xoNGVtTzU1SXpVd0V2TWs5QS90VTY3OGRsUVlXLzczZ1R0K3hSZXhmZ08ydmlPKzZkUndFVi9lSlkyOVJCSXVnVWhKQjFYd2RlMmxUdjlzVVRBMCsyMFlkdXQwd2RKR2I4ci9iMGtVTy9Qc2YwSVJhUUdTNmZQR0dSVzdrWmhKQ1RWWkhSZjNLVlZjRGlYTS9lYjFQZW1PVmxjSk1Hd016d0JlVTVLenhQLzgwYm54bUVrTHA2dWVRei80QVhyejcvOTNxRnJZNHE2Q1JIc28zT0xiSXEvMzFZSWpPWGUvYWZCWWN6M1Q1NWNvbjdIR1JpdG5zbU43S1gwcEh0Q3cvWU9FaWQrVVB5cEJMM1pvamlMRUlSc3VKTC84QS8xUDM1QzM4NG9zY3NuRTV5akwvTkFwcHVlR3ViYjlleE9Kdk5LMTU1OWdwUEJQS0FQVHBFVVdQUXA0UDVqczZBQWJBc2s3a3J2WHRPcUJteDkvamxGejZzLythVVpyTUFQMElQT1NnbG9LYjRaRlZrOFNlK3hweHgvOW53cXAxKzViL3ZuV3Z1cm1BR2RjWlEyQXRsV2FsLyswRVYyZ3lqMEVPTy9oM05PV21BRTcyNTFSZHU5T3pIb3UxK1h4RFE5bzd0YjRuOWd6YkpwaEdGZ0xqcTJScnBqYTJOVXR4dzlKQmpPR1RlNGVKVmFjcytGWjYyYXJmMDBiZUE0eFRuTjNDUjkvWVFRTDJOVnpmWCswTkdwaG8xSGoza0FBV3FOL3dyQU9vdXhHRDk3b0R5SCtla21XSW5HZDNiRTZCNFJiVTZpaHVMNW5LMFN6SGxwZ01DRDlzT3FEWjgzMWNSdmxRSEVDMUc2RGJKUXZ2ZURBanNmcUNlNGdhaXVSdzlzZ0YxV3VPUkQxV3EyUS9mY1FTZ1drRVc4MUo3Wkp0Qjc1Uk5ld0dOVnBORmV6bHlBTTFHMlJtVjAyakx6Z0JVSzJSNzNEc1hvUGk1R3FtaXV2bTNHenJJQWNvV1BxeHFzMEVJT1ZRSkdQWjB2SWxaRzZDWmxEMG5OUTlzNjRQbWNvQkM1bWZVZnVCT1h3YklZUlZvaWkxNnBLNTlLMEFwanB6WE5kbGRPL1Rva0NyL2NXV3R5dFhxOHNtZ0dZME1oc29nT1hSSWM5Y0hiZVdnbExTMkEwNVI3VlkvTUZEakFiUkdySVEvVUU3NTk1QWhVbE5HV3prc1pnckszcWlMZDk1U3JXUCtKRzNpR2hhZWdqSyt0RkRjRUxTVlF3U21hWWJDNmxjcmFLRksxQXUyQWtzUjBLQVVocUN0SElJWmxwZlYrQ21WR3dsQlpyY3QwUkxKb0tVSTZURmpxZ2ZheWdHNk1ZUVFUb09VU1o0RDNOcElORHVocGVDYjlOWUZBTFNWd3c4YzhFT2ZVU1dBbHJjSG83MFJmTUJKRW9zR3BUQUVyZVdBUFhOT1VmMXFaWVV1b3VLS2xvbnVEOGtTcEJ5dDdTaUhBbVNaWEswSDFHc3JEYW9WTkphdTlVUy9XbERtWnB2a0JGa0FwM2t4emw4QlZHdGJTTVJNQ1E0ckJhVW5zbVp4UVVtcEhWWGFYOFJ3TkpmakFrU08zRFNWcTdVREpGdkFHNUF2dTZKZmJXVXRvQlJkalZ2cHFTNmF5M0VhRWt0V3ZWcnoyd01PR0NQcy9SMWsxNGIrbmRSY3hXOGdtc3R4NEJ4ZzFOOExNak91Qk5CVSsvNnpUQVArQTVuNnoyNXRBdVhNTmxrMEwwT01HcitSOXExTTZtN3hNeWdQOEJESE1HQmZSUmlVMlRXcWR3UHB5czBDemVVNGN6a0N5dFVyYWlqUlZ6azlzczJnT2VFWWl5SzlBWG52YVVEak1hNi9rQUFMOFBWby9UNDlCSWlGamUybm1od1RiZ2M4dmtjdU5DQXhLR0U0TjUyN1QvRXF1aWFMSG5LQUZ2WVVaSmx2N2FCQ3o2TzFuWTdwQzdnOURXWjlidDBYQklYQ2ZuMmZOZXBNVFROQ0R6bDJIZzJCVWh5ZXZCZXdxcGJGdk9GV1c3VDU5NmhFSk5MZ0lwZExkUkxJOHR4MDd2RzdWU2lJZ2VnaFIxZ2lhNzhHWkdNUDdNS1A2dDJvTnJrZ3l3emFKV0hiZ2FDU2VNeTdwWUFsbG9TUU9VVmlVYU0zbHpJUW5VWmNhM2NGQXBCNWxsZkdKY1U5R2t5eDBhVlQ3YUNWQkNXZkticnIzNXdLZzFaRlUwcVdUTEdERnJ3MGlGMmt6NCsycVh0TUZqckpVZVdTbHU4QU5CN0pOcnA2dGdNMDFyaUdYYVFyWmpsQVltMDdFTnluZUV1UDMyMzBnc2EwTm9HdW1lTzRwNGNLblZPZUk1TUhpbDgrbHp4anFHaUc1Q0hFalg2eG1rWGJmVFdNYWEyb2RFam5QbnJjQ1lwaWRVam5QbHpnN0FQcHo5WUg1WmMzQVpZN2w1K1ByTmtGZTduWUJMcHNtdjJWY1VsMlM1eDMxR21sczRhSlh6MmY4dEtETm4xMlNMNkdybnVDamV3bHZEUFZEdnFUc0VUVzd2SXYydTZQM2FWMVd1bWpROFRaZDRsUmswQmo4TXo3M2pXN1lLdlRyQUxkOHBTemMxdHdwTC9XSzc5WDZsKy8yNi93SWJFS2RFQVgvdjdld3ZDQ1JOOFQ3QnB2UHB6MFlEOXc5REFza1MvS1F6dU9oZzZlQzFkVVN5NmZKRWtrU2FUdFUwM2RNczJEOHZnUmhUK3RQaVY4ZGpnMFpaa2IrbGVFa001dHVTMVBPZU00SXlFa0xKSGR4MEs3VDRRUG5BdWZ1UnlwOGNqK29Fd29FYzAwSlltMlN6Rmx0K2E2Wm5JOWM4eTljNWtmNGtoTU9aSXNkTU44UjR4VnFicHgvb3IwczlkZGNXK3hWWlRQdnpmZFlUWm9DaVhSTm95N2hqY2dUeXJ4R1A0eHBTcVhOR0d4dXpHYnIzMTZLTFJndFFjVUZtdDJHR0IrdFZ0NmFMSEx3S1hHTlI1NXdtTDNHY2hLeWFoczJodWN0OUlER3FJM0w0eHBGcy9XU1BlL1dSZkhab0dOcDZKYUdyL0lkZnlTT29zZ05wY0Z4eTkyZzBaaHpRakQwZzVxUFBMWXQ5eC8zYW5yUGhaYjlnWHZmcTBPbExuVElIdFBoNGN2ckNzdFQ1Q1Y5VC9HeUp3VWYwaCtkb04zY29rYmxHY2FIL1ZCK1hjYjZ4LzdpMGVMN3kxV3VhVEpKZTZuMW5uMTNFRldCNHovakJjaFJEQ1RhWVBGZWNYV1pNZ3lBb1ZFSlBMK25zQWJXMzFWalB4UUZVbXkwRm5EeEJuRHhMampYUTJ5NTBSNDFVNy90djB0NHh0djEwbXkwREY5aFVrRFJCVS94WEwwUW1UMkNrL3NUZlZWeDI2aFkvb0pqOXlwWmtGcXZmS1dzdUNxblg1MTM0bXhhVUp5WEtkN0psZFVJQlRuOC9udFlUdHgzVWdvUXFhKzZ3YnRES1lpZVJsY1VYZmhybnkrWjQ0NWpvaUlMSlBENXlPbGg0T2w1YUd5TTJIOWg4MU5VWTdyMkFUYXZUMVhtRzIrT1oxcmwycktTRFcxdGxPUnAxYWVDSW8zZC9BRjVZbEwzTjlDa3Z4VXg4TFRyaGxjUVJiWHFRMlhrV3JLU0RHbE9YNzRJcldGcDRHUTdBM0lici9zOGN1MUh2bjQ5NUZqRnlQSExrVyt1NGhmcEk0WHU0VitvQ3pZNnZMSlk5OXlIZEgzMDhNSlFEUE9vUGNFNUlmZmNTdnBUeml0ZE4xY0IyZzdWSVEwYXprSUliVmVlZUlTUlNQaE5JZHAvVnhIMjBSWnhhb1B6YjZ5TGw2VkppNVJORXZTdnBWcDNWeEhhbEx6VHZyVmsyWXZCeUhrVkZYa2thVnVKYnNHZG03THJaN3QwQzRJa1dBa2doeUVrRU9Wa1NudnVwVnNCOUlqMjd4OHBsMHdQbVdnR1pBZ2NoQkMvbjB5UEd1NVI4bXVZbmQwNXBkT3RSdVZpdEdNU0tnYUtpMFBMVmlqS01kaWVJSHcraStTb0I4eGJXa2tsQnlFa0UxN2c4OXRVUFNkMkFmNlduNC94cWIxOVRSckVrME9Rc2pxcndLdmZhd29vWHphWVBHSmU1cjNvalJOYWNZUlVrUnJFckRsUU5RQzVVQ1lvQndJRTVRRFlZSnlJRXhRRG9RSnlvRXdRVGtRSmlnSHdnVGxRSmlnSEFnVGxBTmhnbklnVEZBT2hBbktnVERCUk5zZk9QZDJxeC8vTTJ0K3JWRlgwblRBbG9PUUc4eUkrajh0RUpTRDZRSDYwZExsaUcxQUMvZWpSY3VoNU42M1pEOWF0QnhJYkZBT2hBbktnVEJCT1JBbUxWb09KWkd1bGh3TmE5RnlrSWJ1ZlVzMmc2QWNoRzFBQ3plRG9Celh1TkVETklQZ1Ftb2tCdGh5SUV4UURvUUp5b0V3UVRrUUppZ0h3Z1RsUUppZ0hBZ1RsQU5oZ25JZ1RGQU9oQW5LZ1RCQk9SQW1LQWZDQk9WQW1LQWNDQk9VQTJHQ2NpQk1VQTZFQ2NxQk1FRTVFQ1lvQjhJRTVVQ1lvQndJRTVRRFlZSnlJRXhRRG9USmZ3RUgxc0JhTkVlYXp3QUFBQUJKUlU1RXJrSmdnZz09IiwgInNpemVzIjogIjE4MHgxODAiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19">
+<meta name="theme-color" content="#5b2d82">
+
+<style>
+  :root{
+    --bg: #f5f1f8;
+    --panel: #ffffff;
+    --panel-2: #f3edf9;
+    --line: #ddc9ec;
+    --ink: #2e1a3d;
+    --ink-dim: #7a6a8a;
+    --accent: #5b2d82;
+    --accent-dim: #e4d4f0;
+    --good: #2e8b57;
+    --bad: #c0392b;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    min-height: 100vh;
+    padding: 32px 16px 60px;
+  }
+
+  .wrap{
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  header{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 16px;
+  }
+
+  header h1{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+  header h1 span{ color: var(--accent); }
+
+  header .count{
+    font-family: var(--mono);
+    color: var(--ink-dim);
+    font-size: 13px;
+  }
+
+  .panel{
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .spec-row{
+    display:flex;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .spec-field{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .spec-field label{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-dim);
+  }
+  .spec-field input{
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 14px;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .spec-field input:focus{
+    outline: none;
+    border-color: var(--accent-dim);
+  }
+  .spec-field select{
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .spec-field select:focus{
+    outline: none;
+    border-color: var(--accent-dim);
+  }
+  #deleteProductBtn{
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0 14px;
+  }
+
+  .entry-row{
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+  }
+
+  .field{
+    flex:1;
+    min-width: 0;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .field label{
+    font-size: 12px;
+    color: var(--ink-dim);
+    display:flex;
+    justify-content:space-between;
+  }
+  .field label .unit{ color: var(--ink-dim); font-family: var(--mono); }
+
+  .field input{
+    background: var(--panel-2);
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 600;
+    padding: 14px 12px;
+    width: 100%;
+    letter-spacing: 0.02em;
+    transition: border-color 0.15s ease;
+  }
+  .field input:focus{
+    outline: none;
+    border-color: var(--accent);
+  }
+  .field input.err{ border-color: var(--bad); }
+  .field input.ok{ border-color: var(--good); }
+
+  .add-btn{
+    height: 56px;
+    width: 100%;
+    padding: 0 22px;
+    background: var(--accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(91,45,130,0.25);
+    display: block;
+  }
+  .add-btn:hover{ filter: brightness(1.08); }
+  .add-btn:active{ transform: translateY(1px); }
+
+  .hint{
+    font-size: 11px;
+    color: var(--ink-dim);
+    margin-top: 10px;
+    font-family: var(--mono);
+  }
+
+  .edit-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .edit-banner button{
+    background: none;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .edit-banner button:hover{ background: var(--accent); color: #fff; }
+
+  tr.editing-row{
+    background: var(--accent-dim) !important;
+  }
+  .row-actions{ white-space: nowrap; }
+  .edit-btn{
+    background:none;
+    border:none;
+    color: var(--ink-dim);
+    cursor:pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+  }
+  .edit-btn:hover{ color: var(--accent); }
+
+  table{
+    width:100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+  thead th{
+    text-align:left;
+    color: var(--ink-dim);
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0 10px 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  tbody td{
+    padding: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  tbody tr:last-child td{ border-bottom: none; }
+  tbody tr:hover{ background: var(--panel-2); }
+
+  .flag{
+    display:inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .flag.pass{ background: rgba(76,175,125,0.15); color: var(--good); }
+  .flag.fail{ background: rgba(224,85,79,0.15); color: var(--bad); }
+
+  .del-btn{
+    background:none;
+    border:none;
+    color: var(--ink-dim);
+    cursor:pointer;
+    font-size: 15px;
+    padding: 2px 6px;
+  }
+  .del-btn:hover{ color: var(--bad); }
+
+  .empty{
+    text-align:center;
+    color: var(--ink-dim);
+    padding: 30px 10px;
+    font-size: 13px;
+  }
+
+  .toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 14px;
+  }
+  .toolbar h2{
+    font-size: 14px;
+    margin:0;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .toolbar-actions{ display:flex; gap:8px; }
+
+  .session-line{
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 14px;
+    display: none;
+  }
+  .ghost-btn{
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink-dim);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .ghost-btn:hover{ color: var(--ink); border-color: var(--ink-dim); }
+
+  .stats{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-family: var(--mono);
+  }
+  .stat{ flex: 1 1 100px; min-width: 100px; }
+  .stat .label{ font-size: 11px; color: var(--ink-dim); text-transform: uppercase; letter-spacing: 0.06em; }
+  .stat .value{ font-size: 18px; font-weight: 700; margin-top: 4px; }
+  .stat .value.bad{ color: var(--bad); }
+
+  @media (max-width: 520px) {
+    body{ padding: 20px 12px 60px; }
+    .field input{
+      font-size: 24px;
+    }
+    .spec-row{
+      flex-wrap: wrap;
+      row-gap: 12px;
+    }
+    .spec-field{
+      min-width: calc(50% - 8px);
+      flex: none;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Trident <span>Bottles</span></h1>
+    <div class="count" id="entryCount">0 pieces logged</div>
+  </header>
+
+  <div class="panel">
+    <div class="spec-row">
+      <div class="spec-field">
+        <label>Batch #</label>
+        <input type="text" id="batchInput" placeholder="e.g. B-0417" autocomplete="off">
+      </div>
+      <div class="spec-field">
+        <label>Operator</label>
+        <input type="text" id="operatorInput" placeholder="Name or ID" autocomplete="off">
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="spec-field" style="margin-bottom: 14px;">
+      <label>Candy Type / Product</label>
+      <div style="display:flex; gap:8px;">
+        <select id="productSelect" style="flex:1;"></select>
+        <button type="button" class="ghost-btn" id="deleteProductBtn" title="Delete this product">Delete</button>
+      </div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-field">
+        <label>Weight spec min (g)</label>
+        <input type="text" id="wMin" value="2.8" inputmode="decimal">
+      </div>
+      <div class="spec-field">
+        <label>Weight spec max (g)</label>
+        <input type="text" id="wMax" value="3.4" inputmode="decimal">
+      </div>
+      <div class="spec-field">
+        <label>Length spec min (mm)</label>
+        <input type="text" id="lMin" value="9.50" inputmode="decimal">
+      </div>
+      <div class="spec-field">
+        <label>Length spec max (mm)</label>
+        <input type="text" id="lMax" value="11.50" inputmode="decimal">
+      </div>
+      <div class="spec-field">
+        <label>Width spec min (mm)</label>
+        <input type="text" id="wdMin" value="5.00" inputmode="decimal">
+      </div>
+      <div class="spec-field">
+        <label>Width spec max (mm)</label>
+        <input type="text" id="wdMax" value="7.00" inputmode="decimal">
+      </div>
+    </div>
+
+    <div class="edit-banner" id="editBanner" style="display:none;">
+      <span id="editBannerText">Correcting entry #—</span>
+      <button type="button" id="cancelEditBtn">Cancel</button>
+    </div>
+
+    <div class="entry-row">
+      <div class="field">
+        <label>Weight <span class="unit">g</span></label>
+        <input type="text" id="weightInput" inputmode="numeric" placeholder="0.00" autocomplete="off">
+      </div>
+      <div class="field">
+        <label>Length <span class="unit">mm</span></label>
+        <input type="text" id="lengthInput" inputmode="numeric" placeholder="00.00" autocomplete="off">
+      </div>
+      <div class="field">
+        <label>Width <span class="unit">mm</span></label>
+        <input type="text" id="widthInput" inputmode="numeric" placeholder="00.00" autocomplete="off">
+      </div>
+      <button class="add-btn" id="addBtn" type="button">Log piece</button>
+    </div>
+    <div class="hint" id="hintMsg" style="display:none;"></div>
+  </div>
+
+  <div class="panel">
+    <div class="toolbar">
+      <h2 id="tableTitle">Log</h2>
+      <div class="toolbar-actions">
+        <button class="ghost-btn" id="exportBtn">Export CSV</button>
+        <button class="ghost-btn" id="clearBtn">Clear all</button>
+      </div>
+    </div>
+    <div class="session-line" id="sessionLine"></div>
+    <div style="overflow-x:auto;">
+    <table>
+      <thead>
+        <tr><th>#</th><th>Weight (g)</th><th>Length (mm)</th><th>Width (mm)</th><th>Status</th><th></th></tr>
+      </thead>
+      <tbody id="logBody"></tbody>
+    </table>
+    </div>
+    <div class="empty" id="emptyMsg">No pieces logged yet</div>
+
+    <div class="stats" id="stats" style="display:none">
+      <div class="stat"><div class="label">Avg weight</div><div class="value" id="avgWeight">—</div></div>
+      <div class="stat"><div class="label">Avg length</div><div class="value" id="avgLength">—</div></div>
+      <div class="stat"><div class="label">Avg width</div><div class="value" id="avgWidth">—</div></div>
+      <div class="stat"><div class="label">Out of spec</div><div class="value" id="outOfSpec">0</div></div>
+      <div class="stat"><div class="label">Weight OOS</div><div class="value" id="weightOOS">0</div></div>
+      <div class="stat"><div class="label">Length OOS</div><div class="value" id="lengthOOS">0</div></div>
+      <div class="stat"><div class="label">Width OOS</div><div class="value" id="widthOOS">0</div></div>
+    </div>
+  </div>
+
+  <div class="panel" id="chartPanel" style="display:none;">
+    <h2 style="margin:0 0 14px 0; font-size:14px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.06em;">Defect Breakdown</h2>
+    <div id="defectChart"></div>
+  </div>
+
+  <div class="panel" id="performancePanel" style="display:none;">
+    <h2 style="margin:0 0 14px 0; font-size:14px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.06em;">Process Performance</h2>
+    <div style="display:flex; gap:24px; flex-wrap:wrap; align-items:flex-start;">
+      <div style="flex:0 0 auto; text-align:center;">
+        <div id="passDonut"></div>
+        <div style="font-size:12px; color:var(--ink-dim); margin-top:6px; font-family:var(--mono);">Pass Rate</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="stabilityPanel" style="display:none;">
+    <h2 style="margin:0 0 10px 0; font-size:14px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.06em;">Stability Chart (I-MR Control)</h2>
+    <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:14px; font-family:var(--mono); font-size:11px; color:var(--ink-dim);">
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#2e8b57; margin-right:5px;"></span>Safe (within 1σ)</span>
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#e0b03e; margin-right:5px;"></span>Watch (1–2σ)</span>
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#d9752e; margin-right:5px;"></span>Danger (2–3σ)</span>
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#c0392b; margin-right:5px;"></span>Out of control</span>
+    </div>
+    <div id="stabilityWeightChart"></div>
+    <div id="stabilityLengthChart" style="margin-top:18px;"></div>
+    <div id="stabilityWidthChart" style="margin-top:18px;"></div>
+  </div>
+
+  <div class="panel" id="capabilityPanel" style="display:none;">
+    <h2 style="margin:0 0 4px 0; font-size:14px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:0.06em;">Process Capability (Cp / Cpk / Cpm)</h2>
+    <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:14px; font-family:var(--mono); font-size:11px; color:var(--ink-dim);">
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:2px; background:#2e8b57; margin-right:5px;"></span>Capable (Cpk ≥ 1.33)</span>
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:2px; background:#e0b03e; margin-right:5px;"></span>Marginal (1.00–1.33)</span>
+      <span><span style="display:inline-block; width:10px; height:10px; border-radius:2px; background:#c0392b; margin-right:5px;"></span>Not Capable (&lt; 1.00)</span>
+    </div>
+    <div style="display:flex; gap:32px; flex-wrap:wrap;">
+      <div style="flex:1 1 260px; min-width:240px;">
+        <div style="font-size:12px; font-weight:700; color:var(--ink); margin-bottom:8px;">Weight</div>
+        <div id="weightCapability"></div>
+      </div>
+      <div style="flex:1 1 260px; min-width:240px;">
+        <div style="font-size:12px; font-weight:700; color:var(--ink); margin-bottom:8px;">Length</div>
+        <div id="lengthCapability"></div>
+      </div>
+      <div style="flex:1 1 260px; min-width:240px;">
+        <div style="font-size:12px; font-weight:700; color:var(--ink); margin-bottom:8px;">Width</div>
+        <div id="widthCapability"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const weightInput = document.getElementById('weightInput');
+  const lengthInput = document.getElementById('lengthInput');
+  const widthInput = document.getElementById('widthInput');
+  const batchInput = document.getElementById('batchInput');
+  const operatorInput = document.getElementById('operatorInput');
+  const productSelect = document.getElementById('productSelect');
+  const deleteProductBtn = document.getElementById('deleteProductBtn');
+  const wMinInput = document.getElementById('wMin');
+  const wMaxInput = document.getElementById('wMax');
+  const lMinInput = document.getElementById('lMin');
+  const lMaxInput = document.getElementById('lMax');
+  const wdMinInput = document.getElementById('wdMin');
+  const wdMaxInput = document.getElementById('wdMax');
+  const addBtn = document.getElementById('addBtn');
+  const logBody = document.getElementById('logBody');
+  const emptyMsg = document.getElementById('emptyMsg');
+  const entryCount = document.getElementById('entryCount');
+  const statsEl = document.getElementById('stats');
+  const avgWeightEl = document.getElementById('avgWeight');
+  const avgLengthEl = document.getElementById('avgLength');
+  const avgWidthEl = document.getElementById('avgWidth');
+  const outOfSpecEl = document.getElementById('outOfSpec');
+  const weightOOSEl = document.getElementById('weightOOS');
+  const editBanner = document.getElementById('editBanner');
+  const editBannerText = document.getElementById('editBannerText');
+  const cancelEditBtn = document.getElementById('cancelEditBtn');
+  cancelEditBtn.addEventListener('click', () => exitEditMode());
+  const lengthOOSEl = document.getElementById('lengthOOS');
+  const widthOOSEl = document.getElementById('widthOOS');
+  const chartPanel = document.getElementById('chartPanel');
+  const defectChart = document.getElementById('defectChart');
+  const performancePanel = document.getElementById('performancePanel');
+  const passDonut = document.getElementById('passDonut');
+  const stabilityPanel = document.getElementById('stabilityPanel');
+  const stabilityWeightChart = document.getElementById('stabilityWeightChart');
+  const stabilityLengthChart = document.getElementById('stabilityLengthChart');
+  const stabilityWidthChart = document.getElementById('stabilityWidthChart');
+  const capabilityPanel = document.getElementById('capabilityPanel');
+  const weightCapability = document.getElementById('weightCapability');
+  const lengthCapability = document.getElementById('lengthCapability');
+  const widthCapability = document.getElementById('widthCapability');
+  const exportBtn = document.getElementById('exportBtn');
+  const clearBtn = document.getElementById('clearBtn');
+  const sessionLine = document.getElementById('sessionLine');
+
+  let entries = [];
+  let editIdx = null;
+
+  // ---------- Persistence (survives page reload / app restart) ----------
+  const STORAGE_KEY = 'tridentBottlesEntries_v1';
+  let storageAvailable = true;
+
+  function loadEntries() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) entries = JSON.parse(raw);
+    } catch (e) {
+      storageAvailable = false;
+      console.warn('Storage unavailable, running in memory-only mode:', e);
+    }
+  }
+
+  function saveEntries() {
+    if (!storageAvailable) return;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+    } catch (e) {
+      storageAvailable = false;
+      console.warn('Could not save — running in memory-only mode:', e);
+    }
+  }
+
+  const SESSION_KEY = 'tridentBottlesSession_v1';
+  function saveSession() {
+    if (!storageAvailable) return;
+    try {
+      localStorage.setItem(SESSION_KEY, JSON.stringify({
+        batch: batchInput.value,
+        operator: operatorInput.value
+      }));
+    } catch (e) { /* non-critical */ }
+  }
+  function loadSession() {
+    try {
+      const raw = localStorage.getItem(SESSION_KEY);
+      if (raw) {
+        const s = JSON.parse(raw);
+        batchInput.value = s.batch || '';
+        operatorInput.value = s.operator || '';
+      }
+    } catch (e) { /* non-critical */ }
+  }
+  batchInput.addEventListener('input', () => { saveSession(); render(); });
+  operatorInput.addEventListener('input', () => { saveSession(); render(); });
+
+  // ---------- Per-product spec presets ("Candy Type / Product") ----------
+  const PRODUCTS_KEY = 'tridentBottlesProducts_v1';
+  const LAST_PRODUCT_KEY = 'tridentBottlesLastProduct_v1';
+  const DEFAULT_PRODUCT_NAME = 'Default';
+  const DEFAULT_SPECS = { wMin: '2.8', wMax: '3.4', lMin: '9.50', lMax: '11.50', wdMin: '5.00', wdMax: '7.00' };
+  const NEW_PRODUCT_VALUE = '__new__';
+
+  let products = {};
+
+  function loadProducts() {
+    try {
+      const raw = localStorage.getItem(PRODUCTS_KEY);
+      if (raw) products = JSON.parse(raw);
+    } catch (e) { products = {}; }
+    if (!products || Object.keys(products).length === 0) {
+      products = { [DEFAULT_PRODUCT_NAME]: { ...DEFAULT_SPECS } };
+    }
+  }
+
+  function saveProducts() {
+    if (!storageAvailable) return;
+    try { localStorage.setItem(PRODUCTS_KEY, JSON.stringify(products)); }
+    catch (e) { /* non-critical */ }
+  }
+
+  function saveLastProduct(name) {
+    if (!storageAvailable) return;
+    try { localStorage.setItem(LAST_PRODUCT_KEY, name); }
+    catch (e) { /* non-critical */ }
+  }
+
+  function loadLastProduct() {
+    try { return localStorage.getItem(LAST_PRODUCT_KEY); }
+    catch (e) { return null; }
+  }
+
+  function populateProductSelect(selectedName) {
+    productSelect.innerHTML = '';
+    Object.keys(products).forEach((name) => {
+      const opt = document.createElement('option');
+      opt.value = name;
+      opt.textContent = name;
+      productSelect.appendChild(opt);
+    });
+    const newOpt = document.createElement('option');
+    newOpt.value = NEW_PRODUCT_VALUE;
+    newOpt.textContent = '+ Add new product…';
+    productSelect.appendChild(newOpt);
+    if (selectedName && products[selectedName]) {
+      productSelect.value = selectedName;
+    }
+  }
+
+  function applyProductSpecs(name) {
+    const specs = products[name];
+    if (!specs) return;
+    wMinInput.value = specs.wMin;
+    wMaxInput.value = specs.wMax;
+    lMinInput.value = specs.lMin;
+    lMaxInput.value = specs.lMax;
+    wdMinInput.value = specs.wdMin;
+    wdMaxInput.value = specs.wdMax;
+  }
+
+  function currentProductName() {
+    return productSelect.value === NEW_PRODUCT_VALUE ? null : productSelect.value;
+  }
+
+  // Any manual edit to a spec field updates the currently selected product's
+  // saved preset automatically — no separate "save" step needed.
+  function persistCurrentSpecsToProduct() {
+    const name = currentProductName();
+    if (!name) return;
+    products[name] = {
+      wMin: wMinInput.value,
+      wMax: wMaxInput.value,
+      lMin: lMinInput.value,
+      lMax: lMaxInput.value,
+      wdMin: wdMinInput.value,
+      wdMax: wdMaxInput.value,
+    };
+    saveProducts();
+  }
+
+  productSelect.addEventListener('change', () => {
+    if (productSelect.value === NEW_PRODUCT_VALUE) {
+      const name = (window.prompt('Name this candy type / product:') || '').trim();
+      if (!name) {
+        // revert to whatever was last valid
+        const last = loadLastProduct();
+        populateProductSelect(last && products[last] ? last : Object.keys(products)[0]);
+        applyProductSpecs(productSelect.value);
+        return;
+      }
+      if (products[name]) {
+        // name already exists — just switch to it
+        populateProductSelect(name);
+        applyProductSpecs(name);
+        saveLastProduct(name);
+        showHint(`Switched to existing product "${name}"`, false);
+        return;
+      }
+      products[name] = {
+        wMin: wMinInput.value,
+        wMax: wMaxInput.value,
+        lMin: lMinInput.value,
+        lMax: lMaxInput.value,
+        wdMin: wdMinInput.value,
+        wdMax: wdMaxInput.value,
+      };
+      saveProducts();
+      populateProductSelect(name);
+      saveLastProduct(name);
+      showHint(`New product "${name}" saved`, false);
+    } else {
+      applyProductSpecs(productSelect.value);
+      saveLastProduct(productSelect.value);
+    }
+  });
+
+  [wMinInput, wMaxInput, lMinInput, lMaxInput, wdMinInput, wdMaxInput].forEach((el) => {
+    el.addEventListener('input', persistCurrentSpecsToProduct);
+  });
+
+  deleteProductBtn.addEventListener('click', () => {
+    const name = currentProductName();
+    if (!name) return;
+    const remaining = Object.keys(products).length;
+    if (remaining <= 1) {
+      showHint('Can\u2019t delete the only saved product', true);
+      return;
+    }
+    if (!confirm(`Delete the saved specs for "${name}"? This can't be undone.`)) return;
+    delete products[name];
+    saveProducts();
+    const nextName = Object.keys(products)[0];
+    populateProductSelect(nextName);
+    applyProductSpecs(nextName);
+    saveLastProduct(nextName);
+    showHint(`Deleted "${name}"`, false);
+  });
+
+  // ---------- Audio / haptic feedback ----------
+  let audioCtx = null;
+  function getAudioCtx() {
+    if (!audioCtx) {
+      try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+      catch (e) { return null; }
+    }
+    return audioCtx;
+  }
+
+  function beep(freq, durationMs, type = 'sine') {
+    const ctx = getAudioCtx();
+    if (!ctx) return;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = type;
+    osc.frequency.value = freq;
+    gain.gain.setValueAtTime(0.15, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + durationMs / 1000);
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + durationMs / 1000);
+  }
+
+  function feedbackSuccess() {
+    beep(880, 90);
+    if (navigator.vibrate) navigator.vibrate(40);
+  }
+
+  function feedbackError() {
+    beep(220, 160, 'square');
+    if (navigator.vibrate) navigator.vibrate([60, 40, 60]);
+  }
+
+  // Format a raw digit string into a number with the decimal point
+  // fixed at `intDigits` places from the left.
+  function formatFixedDecimal(rawDigits, intDigits) {
+    if (rawDigits.length === 0) return '';
+    if (rawDigits.length < intDigits) {
+      // still typing the integer part
+      return rawDigits;
+    }
+    if (rawDigits.length === intDigits) {
+      // just hit the required digit count -> show the dot immediately
+      return rawDigits + '.';
+    }
+    return rawDigits.slice(0, intDigits) + '.' + rawDigits.slice(intDigits);
+  }
+
+  function attachAutoDecimal(inputEl, intDigits) {
+    inputEl.addEventListener('input', (e) => {
+      const cursorWasAtEnd = inputEl.selectionEnd === inputEl.value.length;
+      const digitsOnly = inputEl.value.replace(/[^0-9]/g, '');
+      const formatted = formatFixedDecimal(digitsOnly, intDigits);
+      inputEl.value = formatted;
+      if (cursorWasAtEnd) {
+        inputEl.selectionStart = inputEl.selectionEnd = inputEl.value.length;
+      }
+    });
+  }
+
+  attachAutoDecimal(weightInput, 1);   // weight: point after 1 digit
+  attachAutoDecimal(lengthInput, 2);   // length: point after 2 digits
+  attachAutoDecimal(widthInput, 2);    // width: point after 2 digits
+
+  weightInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); lengthInput.focus(); }
+  });
+  lengthInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); widthInput.focus(); }
+  });
+  widthInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); logEntry(); }
+  });
+
+  function getSpecs() {
+    return {
+      wMin: parseFloat(document.getElementById('wMin').value),
+      wMax: parseFloat(document.getElementById('wMax').value),
+      lMin: parseFloat(document.getElementById('lMin').value),
+      lMax: parseFloat(document.getElementById('lMax').value),
+      wdMin: parseFloat(document.getElementById('wdMin').value),
+      wdMax: parseFloat(document.getElementById('wdMax').value),
+    };
+  }
+
+  // Returns a differentiated status label so weight/length/width failures
+  // (individually or in combination) are distinguishable, not just a generic FAIL.
+  function statusLabel(entry) {
+    if (entry.wOk === undefined || entry.lOk === undefined || entry.wdOk === undefined) {
+      // older saved entries before these fields existed
+      return entry.pass ? 'PASS' : 'FAIL';
+    }
+    if (entry.wOk && entry.lOk && entry.wdOk) return 'PASS';
+    const failed = [];
+    if (!entry.wOk) failed.push('Weight');
+    if (!entry.lOk) failed.push('Length');
+    if (!entry.wdOk) failed.push('Width');
+    return `FAIL (${failed.join(', ')})`;
+  }
+
+  function statusClass(entry) {
+    return entry.pass ? 'pass' : 'fail';
+  }
+
+  // Flags a value as a likely typo if it's wildly far from the recent running
+  // average — much wider than the spec band, so real defects still pass through,
+  // but a stray extra/missing digit (e.g. 32.45 instead of 3.245) gets caught.
+  function checkPlausible(value, key, specMin, specMax) {
+    if (entries.length < 5) return { plausible: true };
+    const recent = entries.slice(-20);
+    const avg = recent.reduce((s, e) => s + e[key], 0) / recent.length;
+    const specRange = specMax - specMin;
+    const tolerance = (isFinite(specRange) && specRange > 0) ? specRange * 3 : avg * 2;
+    if (Math.abs(value - avg) > tolerance) {
+      return { plausible: false, avg };
+    }
+    return { plausible: true };
+  }
+
+  const hintMsg = document.getElementById('hintMsg');
+  let hintTimeout = null;
+
+  function showHint(msg, isError) {
+    hintMsg.textContent = msg;
+    hintMsg.style.color = isError ? 'var(--bad)' : '';
+    hintMsg.style.display = 'block';
+    if (hintTimeout) clearTimeout(hintTimeout);
+    hintTimeout = setTimeout(() => {
+      hintMsg.style.display = 'none';
+      hintMsg.textContent = '';
+      hintMsg.style.color = '';
+    }, 2500);
+  }
+
+  function logEntry() {
+    const w = parseFloat(weightInput.value);
+    const l = parseFloat(lengthInput.value);
+    const wd = parseFloat(widthInput.value);
+
+    weightInput.classList.remove('err','ok');
+    lengthInput.classList.remove('err','ok');
+    widthInput.classList.remove('err','ok');
+
+    if (isNaN(w) || isNaN(l) || isNaN(wd)) {
+      const missingNames = [];
+      if (isNaN(w)) { weightInput.classList.add('err'); missingNames.push('weight'); }
+      if (isNaN(l)) { lengthInput.classList.add('err'); missingNames.push('length'); }
+      if (isNaN(wd)) { widthInput.classList.add('err'); missingNames.push('width'); }
+      (isNaN(w) ? weightInput : (isNaN(l) ? lengthInput : widthInput)).focus();
+      showHint(`Enter ${missingNames.join(', ')} before logging`, true);
+      feedbackError();
+      return;
+    }
+
+    const specs = getSpecs();
+
+    // Skip the typo-plausibility check while correcting an existing entry —
+    // that's precisely the situation where the operator already knows the
+    // original value was wrong and is fixing it on purpose.
+    if (editIdx === null) {
+      const wCheck = checkPlausible(w, 'w', specs.wMin, specs.wMax);
+      const lCheck = checkPlausible(l, 'l', specs.lMin, specs.lMax);
+      const wdCheck = checkPlausible(wd, 'wd', specs.wdMin, specs.wdMax);
+      if (!wCheck.plausible || !lCheck.plausible || !wdCheck.plausible) {
+        const parts = [];
+        if (!wCheck.plausible) parts.push(`weight ${w}g vs recent avg ${wCheck.avg.toFixed(2)}g`);
+        if (!lCheck.plausible) parts.push(`length ${l}mm vs recent avg ${lCheck.avg.toFixed(2)}mm`);
+        if (!wdCheck.plausible) parts.push(`width ${wd}mm vs recent avg ${wdCheck.avg.toFixed(2)}mm`);
+        feedbackError();
+        const proceed = confirm(
+          `This looks like a possible typo:\n${parts.join('\n')}\n\nLog it anyway?`
+        );
+        if (!proceed) {
+          showHint('Entry not logged — check the value and re-enter', true);
+          weightInput.focus();
+          return;
+        }
+      }
+    }
+
+    const wOk = w >= specs.wMin && w <= specs.wMax;
+    const lOk = l >= specs.lMin && l <= specs.lMax;
+    const wdOk = wd >= specs.wdMin && wd <= specs.wdMax;
+    const pass = wOk && lOk && wdOk;
+
+    if (editIdx !== null) {
+      const original = entries[editIdx];
+      entries[editIdx] = {
+        ...original,
+        w, l, wd, pass, wOk, lOk, wdOk,
+        editedAt: new Date().toISOString(),
+      };
+      saveEntries();
+      render();
+      feedbackSuccess();
+      showHint(`Entry #${editIdx + 1} updated`, false);
+      exitEditMode();
+    } else {
+      const now = new Date();
+      entries.push({ w, l, wd, pass, wOk, lOk, wdOk, time: now.toISOString() });
+      saveEntries();
+      render();
+      feedbackSuccess();
+      weightInput.value = '';
+      lengthInput.value = '';
+      widthInput.value = '';
+      weightInput.focus();
+    }
+  }
+
+  function startEdit(idx) {
+    const entry = entries[idx];
+    if (!entry) return;
+    editIdx = idx;
+    weightInput.value = entry.w.toString();
+    lengthInput.value = entry.l.toString();
+    widthInput.value = entry.wd.toString();
+    editBanner.style.display = 'flex';
+    editBannerText.textContent = `Correcting entry #${idx + 1}`;
+    addBtn.textContent = 'Update piece';
+    weightInput.focus();
+    render();
+  }
+
+  function exitEditMode() {
+    editIdx = null;
+    editBanner.style.display = 'none';
+    addBtn.textContent = 'Log piece';
+    weightInput.value = '';
+    lengthInput.value = '';
+    widthInput.value = '';
+    render();
+  }
+
+  function deleteEntry(idx) {
+    entries.splice(idx, 1);
+    if (editIdx === idx) {
+      exitEditMode();
+    } else if (editIdx !== null && idx < editIdx) {
+      editIdx -= 1;
+    }
+    saveEntries();
+    render();
+  }
+
+  function render() {
+    logBody.innerHTML = '';
+    if (entries.length === 0) {
+      emptyMsg.style.display = 'block';
+      statsEl.style.display = 'none';
+    } else {
+      emptyMsg.style.display = 'none';
+      statsEl.style.display = 'flex';
+    }
+
+    entries.forEach((entry, idx) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${idx + 1}</td>
+        <td>${entry.w.toFixed(2)}</td>
+        <td>${entry.l.toFixed(2)}</td>
+        <td>${entry.wd.toFixed(2)}</td>
+        <td><span class="flag ${statusClass(entry)}">${statusLabel(entry)}</span></td>
+        <td class="row-actions">
+          <button class="edit-btn" data-idx="${idx}" title="Correct this entry">✎</button>
+          <button class="del-btn" data-idx="${idx}" title="Remove">✕</button>
+        </td>
+      `;
+      logBody.appendChild(tr);
+    });
+
+    const batch = batchInput.value.trim();
+    const operator = operatorInput.value.trim();
+    const sessionParts = [];
+    if (batch) sessionParts.push(`Batch ${batch}`);
+    if (operator) sessionParts.push(`Operator ${operator}`);
+    sessionLine.textContent = sessionParts.join('  ·  ');
+    sessionLine.style.display = sessionParts.length ? 'block' : 'none';
+
+    logBody.querySelectorAll('.del-btn').forEach(btn => {
+      btn.addEventListener('click', () => deleteEntry(parseInt(btn.dataset.idx)));
+    });
+    logBody.querySelectorAll('.edit-btn').forEach(btn => {
+      btn.addEventListener('click', () => startEdit(parseInt(btn.dataset.idx)));
+    });
+    if (editIdx !== null && logBody.children[editIdx]) {
+      logBody.children[editIdx].classList.add('editing-row');
+    }
+
+    entryCount.textContent = `${entries.length} piece${entries.length === 1 ? '' : 's'} logged`;
+
+    if (entries.length > 0) {
+      const avgW = entries.reduce((s, e) => s + e.w, 0) / entries.length;
+      const avgL = entries.reduce((s, e) => s + e.l, 0) / entries.length;
+      const avgWd = entries.reduce((s, e) => s + e.wd, 0) / entries.length;
+      const fails = entries.filter(e => !e.pass).length;
+      const weightFails = entries.filter(e => e.wOk === false).length;
+      const lengthFails = entries.filter(e => e.lOk === false).length;
+      const widthFails = entries.filter(e => e.wdOk === false).length;
+      avgWeightEl.textContent = avgW.toFixed(3) + ' g';
+      avgLengthEl.textContent = avgL.toFixed(3) + ' mm';
+      avgWidthEl.textContent = avgWd.toFixed(3) + ' mm';
+      outOfSpecEl.textContent = fails;
+      outOfSpecEl.className = 'value' + (fails > 0 ? ' bad' : '');
+      weightOOSEl.textContent = weightFails;
+      weightOOSEl.className = 'value' + (weightFails > 0 ? ' bad' : '');
+      lengthOOSEl.textContent = lengthFails;
+      lengthOOSEl.className = 'value' + (lengthFails > 0 ? ' bad' : '');
+      widthOOSEl.textContent = widthFails;
+      widthOOSEl.className = 'value' + (widthFails > 0 ? ' bad' : '');
+    }
+
+    drawDefectChart();
+    drawPerformancePanel();
+    drawStabilityCharts();
+    drawCapabilityPanel();
+  }
+
+  // Renders a small SVG bar chart breaking pieces down into Pass, and
+  // single-dimension failures (Weight-only, Length-only, Width-only), plus a
+  // Multiple bucket for pieces that failed more than one dimension at once —
+  // so the three defect types are visually distinguishable, not just numbers
+  // in the stats row.
+  function drawDefectChart() {
+    if (entries.length === 0) {
+      chartPanel.style.display = 'none';
+      return;
+    }
+    chartPanel.style.display = 'block';
+
+    const passCount = entries.filter(e => e.pass).length;
+    const weightOnly = entries.filter(e => e.wOk === false && e.lOk !== false && e.wdOk !== false).length;
+    const lengthOnly = entries.filter(e => e.lOk === false && e.wOk !== false && e.wdOk !== false).length;
+    const widthOnly = entries.filter(e => e.wdOk === false && e.wOk !== false && e.lOk !== false).length;
+    const multiCount = entries.filter(e => {
+      const failCount = [e.wOk === false, e.lOk === false, e.wdOk === false].filter(Boolean).length;
+      return failCount >= 2;
+    }).length;
+
+    const bars = [
+      { label: 'Pass', value: passCount, color: 'var(--good)' },
+      { label: 'Weight', value: weightOnly, color: 'var(--accent)' },
+      { label: 'Length', value: lengthOnly, color: '#c98a2e' },
+      { label: 'Width', value: widthOnly, color: '#3e8fb0' },
+      { label: 'Multiple', value: multiCount, color: 'var(--bad)' },
+    ];
+
+    const maxVal = Math.max(1, ...bars.map(b => b.value));
+    const chartH = 160;
+    const barW = 70;
+    const gap = 30;
+    const totalW = bars.length * (barW + gap) + gap;
+    const topPad = 28;
+
+    let svg = `<svg viewBox="0 0 ${totalW} ${chartH + topPad + 34}" style="width:100%; max-width:420px; height:auto; font-family:var(--sans);">`;
+
+    bars.forEach((b, i) => {
+      const x = gap + i * (barW + gap);
+      const h = (b.value / maxVal) * chartH;
+      const y = topPad + (chartH - h);
+      svg += `
+        <text x="${x + barW / 2}" y="${topPad - 8}" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">${b.value}</text>
+        <rect x="${x}" y="${y}" width="${barW}" height="${Math.max(h, 2)}" rx="6" fill="${b.color}" />
+        <text x="${x + barW / 2}" y="${topPad + chartH + 20}" text-anchor="middle" font-size="11" fill="var(--ink-dim)">${b.label}</text>
+      `;
+    });
+
+    svg += `</svg>`;
+    defectChart.innerHTML = svg;
+  }
+
+  // Draws a circular percentage gauge. value is 0-100.
+  function drawPercentCircle(container, value, color, size = 120, strokeW = 14) {
+    const r = (size - strokeW) / 2;
+    const cx = size / 2, cy = size / 2;
+    const circumference = 2 * Math.PI * r;
+    const offset = circumference * (1 - value / 100);
+    const svg = `
+      <svg viewBox="0 0 ${size} ${size}" style="width:${size}px; height:${size}px;">
+        <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--panel-2)" stroke-width="${strokeW}" />
+        <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="${strokeW}"
+          stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"
+          stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})" />
+        <text x="${cx}" y="${cy + 7}" text-anchor="middle" font-size="24" font-weight="700"
+          fill="var(--ink)" font-family="var(--sans)">${value.toFixed(0)}%</text>
+      </svg>`;
+    container.innerHTML = svg;
+  }
+
+  function drawPerformancePanel() {
+    if (entries.length === 0) {
+      performancePanel.style.display = 'none';
+      return;
+    }
+    performancePanel.style.display = 'block';
+    const passCount = entries.filter(e => e.pass).length;
+    const passRate = (passCount / entries.length) * 100;
+    drawPercentCircle(passDonut, passRate, 'var(--accent)');
+  }
+
+  // Individuals/Moving-Range control limits — same method as the Excel dashboard.
+  // Individuals/Moving-Range control stats, plus the 1-sigma/2-sigma zone
+  // boundaries used for the standard green/yellow/red SPC zone banding.
+  function computeControlStats(key) {
+    const vals = entries.map(e => e[key]);
+    const mean = vals.reduce((s, v) => s + v, 0) / vals.length;
+    let mrSum = 0, mrCount = 0;
+    for (let i = 1; i < vals.length; i++) {
+      mrSum += Math.abs(vals[i] - vals[i - 1]);
+      mrCount++;
+    }
+    const avgMR = mrCount > 0 ? mrSum / mrCount : 0;
+    const sigma = avgMR / 1.128; // d2 constant for n=2 (moving range of 2 consecutive points)
+    const ucl = mean + 3 * sigma;
+    const lcl = Math.max(0, mean - 3 * sigma);
+    return {
+      mean, sigma, ucl, lcl,
+      ucl2: mean + 2 * sigma, lcl2: Math.max(0, mean - 2 * sigma),
+      ucl1: mean + 1 * sigma, lcl1: Math.max(0, mean - 1 * sigma),
+    };
+  }
+
+  // Classifies a value into an SPC zone for color-coding: 'safe' (within 1 sigma),
+  // 'watch' (1-2 sigma), 'danger' (2-3 sigma, still technically in control), or
+  // 'violation' (beyond the 3-sigma UCL/LCL — a real out-of-control signal).
+  function zoneFor(v, stats) {
+    if (v > stats.ucl || v < stats.lcl) return 'violation';
+    if (v > stats.ucl2 || v < stats.lcl2) return 'danger';
+    if (v > stats.ucl1 || v < stats.lcl1) return 'watch';
+    return 'safe';
+  }
+
+  const ZONE_COLORS = {
+    safe: '#2e8b57',
+    watch: '#e0b03e',
+    danger: '#d9752e',
+    violation: '#c0392b',
+  };
+
+  function drawStabilityChart(container, key, unit, lineColor) {
+    const vals = entries.map(e => e[key]);
+    const stats = computeControlStats(key);
+    const { mean, ucl, lcl, ucl2, lcl2, ucl1, lcl1 } = stats;
+
+    const w = 460, h = 210, padL = 46, padR = 14, padT = 16, padB = 24;
+    const plotW = w - padL - padR, plotH = h - padT - padB;
+
+    const allVals = [...vals, ucl, lcl];
+    const minV = Math.min(...allVals) * 0.98;
+    const maxV = Math.max(...allVals) * 1.02;
+    const range = (maxV - minV) || 1;
+
+    const xFor = (i) => padL + (vals.length > 1 ? (i / (vals.length - 1)) * plotW : plotW / 2);
+    const yFor = (v) => padT + plotH - ((v - minV) / range) * plotH;
+    const yForClamped = (v) => Math.max(padT, Math.min(padT + plotH, yFor(v)));
+
+    const linePoints = vals.map((v, i) => `${xFor(i)},${yFor(v)}`).join(' ');
+
+    let svg = `<svg viewBox="0 0 ${w} ${h}" style="width:100%; max-width:${w}px; height:auto; font-family:var(--sans);">`;
+
+    // Background danger zones, drawn from outside in: red (beyond 2 sigma out
+    // to the plot edge, capturing both "danger" and "violation" territory),
+    // yellow (1-2 sigma), green (within 1 sigma of the mean).
+    const yTop = padT, yBot = padT + plotH;
+    const yUcl2 = yForClamped(ucl2), yLcl2 = yForClamped(lcl2);
+    const yUcl1 = yForClamped(ucl1), yLcl1 = yForClamped(lcl1);
+
+    svg += `<rect x="${padL}" y="${yTop}" width="${plotW}" height="${Math.max(0, yUcl2 - yTop)}" fill="${ZONE_COLORS.violation}" opacity="0.12" />`;
+    svg += `<rect x="${padL}" y="${yUcl2}" width="${plotW}" height="${Math.max(0, yUcl1 - yUcl2)}" fill="${ZONE_COLORS.watch}" opacity="0.15" />`;
+    svg += `<rect x="${padL}" y="${yUcl1}" width="${plotW}" height="${Math.max(0, yLcl1 - yUcl1)}" fill="${ZONE_COLORS.safe}" opacity="0.12" />`;
+    svg += `<rect x="${padL}" y="${yLcl1}" width="${plotW}" height="${Math.max(0, yLcl2 - yLcl1)}" fill="${ZONE_COLORS.watch}" opacity="0.15" />`;
+    svg += `<rect x="${padL}" y="${yLcl2}" width="${plotW}" height="${Math.max(0, yBot - yLcl2)}" fill="${ZONE_COLORS.violation}" opacity="0.12" />`;
+
+    // control + zone boundary lines
+    [
+      { y: ucl, label: 'UCL', dash: '5,4', c: ZONE_COLORS.violation, w: 1.75 },
+      { y: ucl2, label: '', dash: '2,3', c: ZONE_COLORS.watch, w: 1 },
+      { y: mean, label: 'CL', dash: '2,3', c: 'var(--ink-dim)', w: 1.5 },
+      { y: lcl2, label: '', dash: '2,3', c: ZONE_COLORS.watch, w: 1 },
+      { y: lcl, label: 'LCL', dash: '5,4', c: ZONE_COLORS.violation, w: 1.75 },
+    ].forEach((l) => {
+      const y = yFor(l.y);
+      svg += `<line x1="${padL}" y1="${y}" x2="${w - padR}" y2="${y}" stroke="${l.c}" stroke-width="${l.w}" stroke-dasharray="${l.dash}" />`;
+      if (l.label) {
+        svg += `<text x="${w - padR}" y="${y - 4}" text-anchor="end" font-size="9" fill="${l.c}">${l.label} ${l.y.toFixed(2)}</text>`;
+      }
+    });
+
+    // data line + zone-colored points
+    svg += `<polyline points="${linePoints}" fill="none" stroke="${lineColor}" stroke-width="2" opacity="0.85" />`;
+    vals.forEach((v, i) => {
+      const zone = zoneFor(v, stats);
+      const isViolation = zone === 'violation';
+      svg += `<circle cx="${xFor(i)}" cy="${yFor(v)}" r="${isViolation ? 5.5 : 4}" fill="${ZONE_COLORS[zone]}" stroke="${isViolation ? '#fff' : 'none'}" stroke-width="${isViolation ? 1.5 : 0}" />`;
+    });
+
+    const dimLabel = key === 'w' ? 'Weight' : (key === 'l' ? 'Length' : 'Width');
+    svg += `<text x="${padL}" y="12" font-size="11" font-weight="700" fill="var(--ink)">${dimLabel} (${unit})</text>`;
+    svg += `</svg>`;
+    container.innerHTML = svg;
+  }
+
+  function drawStabilityCharts() {
+    if (entries.length < 2) {
+      stabilityPanel.style.display = 'none';
+      return;
+    }
+    stabilityPanel.style.display = 'block';
+    drawStabilityChart(stabilityWeightChart, 'w', 'g', 'var(--accent)');
+    drawStabilityChart(stabilityLengthChart, 'l', 'mm', '#c98a2e');
+    drawStabilityChart(stabilityWidthChart, 'wd', 'mm', '#3e8fb0');
+  }
+
+  // Process capability indices — Cp (potential capability), Cpk (actual
+  // capability accounting for centering), and Cpm (Taguchi capability index,
+  // penalizing distance from a target value). Uses the overall sample
+  // standard deviation of the logged measurements.
+  function computeCapability(key, usl, lsl, target) {
+    const vals = entries.map(e => e[key]);
+    const n = vals.length;
+    const mean = vals.reduce((s, v) => s + v, 0) / n;
+    const variance = vals.reduce((s, v) => s + Math.pow(v - mean, 2), 0) / (n - 1);
+    const sigma = Math.sqrt(variance);
+
+    if (sigma === 0) {
+      return { cp: null, cpk: null, cpm: null, mean, sigma };
+    }
+
+    const cp = (usl - lsl) / (6 * sigma);
+    const cpu = (usl - mean) / (3 * sigma);
+    const cpl = (mean - lsl) / (3 * sigma);
+    const cpk = Math.min(cpu, cpl);
+
+    const t = target !== undefined ? target : (usl + lsl) / 2;
+    const tau = Math.sqrt(variance + Math.pow(mean - t, 2));
+    const cpm = (usl - lsl) / (6 * tau);
+
+    return { cp, cpk, cpm, mean, sigma };
+  }
+
+  function capabilityRating(cpk) {
+    if (cpk === null) return { label: 'N/A', color: 'var(--ink-dim)' };
+    if (cpk >= 1.33) return { label: 'Capable', color: '#2e8b57' };
+    if (cpk >= 1.00) return { label: 'Marginal', color: '#e0b03e' };
+    return { label: 'Not Capable', color: '#c0392b' };
+  }
+
+  // Renders Cp/Cpk/Cpm as horizontal bar gauges scaled against a reference
+  // max of 2.0 (comfortably above the 1.33 capable threshold), so bars stay
+  // readable even when an index is very high.
+  function drawCapabilityBars(container, stats) {
+    const { cp, cpk, cpm } = stats;
+    const rating = capabilityRating(cpk);
+    const maxScale = 2.0;
+    const barMaxWidth = 220;
+
+    function barRow(label, value, color) {
+      const displayVal = value === null ? 0 : Math.max(0, value);
+      const pct = Math.min(1, displayVal / maxScale);
+      const w = pct * barMaxWidth;
+      const valText = value === null ? 'N/A' : value.toFixed(2);
+      return `
+        <div style="margin-bottom:10px;">
+          <div style="display:flex; justify-content:space-between; font-size:11px; color:var(--ink-dim); font-family:var(--mono); margin-bottom:3px;">
+            <span>${label}</span><span style="font-weight:700; color:var(--ink);">${valText}</span>
+          </div>
+          <div style="background:var(--panel-2); border-radius:4px; height:10px; width:${barMaxWidth}px; max-width:100%; overflow:hidden;">
+            <div style="background:${color}; height:100%; width:${w}px; border-radius:4px;"></div>
+          </div>
+        </div>`;
+    }
+
+    let html = '';
+    html += barRow('Cp', cp, 'var(--accent)');
+    html += barRow('Cpk', cpk, rating.color);
+    html += barRow('Cpm', cpm, 'var(--accent)');
+    html += `<div style="margin-top:6px;">
+      <span style="display:inline-block; padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; font-family:var(--mono); color:#fff; background:${rating.color};">${rating.label}</span>
+    </div>`;
+
+    container.innerHTML = html;
+  }
+
+  function drawCapabilityPanel() {
+    // Need at least a few points for a meaningful standard deviation, and
+    // valid numeric spec limits to compare against.
+    const specs = getSpecs();
+    const specsValid = [specs.wMin, specs.wMax, specs.lMin, specs.lMax, specs.wdMin, specs.wdMax].every(v => !isNaN(v));
+    if (entries.length < 5 || !specsValid) {
+      capabilityPanel.style.display = 'none';
+      return;
+    }
+    capabilityPanel.style.display = 'block';
+
+    const wStats = computeCapability('w', specs.wMax, specs.wMin);
+    const lStats = computeCapability('l', specs.lMax, specs.lMin);
+    const wdStats = computeCapability('wd', specs.wdMax, specs.wdMin);
+
+    drawCapabilityBars(weightCapability, wStats);
+    drawCapabilityBars(lengthCapability, lStats);
+    drawCapabilityBars(widthCapability, wdStats);
+  }
+
+  addBtn.addEventListener('click', logEntry);
+
+  clearBtn.addEventListener('click', () => {
+    if (entries.length === 0) return;
+    if (confirm('Clear all logged entries?')) {
+      entries = [];
+      saveEntries();
+      render();
+    }
+  });
+
+  exportBtn.addEventListener('click', () => {
+    if (entries.length === 0) return;
+    const batch = (batchInput.value.trim() || '—').replace(/,/g, ' ');
+    const operator = (operatorInput.value.trim() || '—').replace(/,/g, ' ');
+    const product = (currentProductName() || '—').replace(/,/g, ' ');
+    const exportTime = new Date().toLocaleString();
+    const avgW = entries.reduce((s, e) => s + e.w, 0) / entries.length;
+    const avgL = entries.reduce((s, e) => s + e.l, 0) / entries.length;
+    const avgWd = entries.reduce((s, e) => s + e.wd, 0) / entries.length;
+
+    let csv = `Product,${product}\n`;
+    csv += `Batch,${batch}\n`;
+    csv += `Operator,${operator}\n`;
+    csv += `Exported,${exportTime}\n`;
+    csv += `Avg Weight (g),${avgW.toFixed(3)}\n`;
+    csv += `Avg Length (mm),${avgL.toFixed(3)}\n`;
+    csv += `Avg Width (mm),${avgWd.toFixed(3)}\n`;
+    csv += `\n`;
+    csv += 'Index,Weight(g),Length(mm),Width(mm),Status\n';
+    entries.forEach((e, i) => {
+      csv += `${i + 1},${e.w.toFixed(2)},${e.l.toFixed(2)},${e.wd.toFixed(2)},${statusLabel(e)}\n`;
+    });
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    const batchPart = batchInput.value.trim().replace(/[^a-z0-9]/gi, '_') || 'log';
+    const dateStr = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    a.download = `trident_bottles_${batchPart}_${dateStr}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  loadSession();
+  loadProducts();
+  {
+    const last = loadLastProduct();
+    const initialName = (last && products[last]) ? last : Object.keys(products)[0];
+    populateProductSelect(initialName);
+    applyProductSpecs(initialName);
+    saveLastProduct(initialName);
+  }
+  loadEntries();
+  render();
+  weightInput.focus();
+  if (entries.length > 0) {
+    showHint(`Restored ${entries.length} piece${entries.length === 1 ? '' : 's'} from last session`, false);
+  }
+
+  // ---------- Offline support (PWA) ----------
+  // Only works when served over https or localhost — browsers block Service
+  // Workers on file:// and most sandboxed previews. Fails silently otherwise.
+  if ('serviceWorker' in navigator) {
+    const swCode = `
+      const CACHE_NAME = 'trident-bottles-v1';
+      self.addEventListener('install', (e) => {
+        self.skipWaiting();
+        e.waitUntil(
+          caches.open(CACHE_NAME).then((cache) => cache.add(self.registration.scope))
+        );
+      });
+      self.addEventListener('activate', (e) => { self.clients.claim(); });
+      self.addEventListener('fetch', (e) => {
+        e.respondWith(
+          caches.match(e.request).then((cached) => cached || fetch(e.request).catch(() => cached))
+        );
+      });
+    `;
+    try {
+      const blob = new Blob([swCode], { type: 'application/javascript' });
+      const swUrl = URL.createObjectURL(blob);
+      navigator.serviceWorker.register(swUrl).catch(() => { /* not supported in this context */ });
+    } catch (e) { /* not supported in this context */ }
+  }
+</script>
+</body>
+</html>
